@@ -21,7 +21,7 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="244dp"
         android:layout_marginBottom="652dp"
@@ -40,6 +40,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="25dp"
             android:text="Listen to your"
+            android:fontFamily="@font/jejughotic"
             android:textColor="@color/white"
             android:textSize="12dp"></TextView>
 
@@ -48,6 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/jejughotic"
             android:text="Favorite Song"
             android:textColor="@color/white"
             android:textSize="20dp"
@@ -74,6 +76,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="playing"
             android:layout_marginTop="5dp"
             app:cardCornerRadius="10dp">
 
@@ -97,6 +100,8 @@
                 android:layout_height="150dp"
                 android:layout_marginLeft="20dp"
                 android:scaleType="fitXY"
+                android:id="@+id/btn_music"
+                android:onClick="playing"
                 android:src="@drawable/tothe_bone"></ImageView>
 
         </androidx.cardview.widget.CardView>
@@ -105,6 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/background"
+            android:onClick="playing"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
             app:cardCornerRadius="10dp">
@@ -128,6 +134,7 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:fontFamily="@font/jejughotic"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,6 +143,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.681"></TextView>
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -160,6 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
+                android:onClick="playing"
                 app:cardCornerRadius="10dp">
                 <ImageView
                     android:layout_width="67dp"
@@ -181,6 +198,7 @@
                     android:layout_height="wrap_content"
                     android:text="it Will Rain"
                     android:textColor="@color/white"
+                    android:fontFamily="@font/jejughotic"
                     android:textSize="18dp"
                     android:textStyle="bold"></TextView>
 
@@ -188,6 +206,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Bruno Mars"
+                    android:fontFamily="@font/jejumyeuongjo"
                     android:textColor="@color/white"
                     android:textSize="12dp"></TextView>
             </LinearLayout>
@@ -196,10 +215,11 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="120dp"
+                android:layout_marginLeft="110dp"
                 android:src="@drawable/titik3samping"
                 app:tint="@color/white"></ImageView>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -210,6 +230,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="playing"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="10dp">
@@ -231,6 +252,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rude"
+                    android:fontFamily="@font/jejughotic"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold"></TextView>
@@ -239,6 +261,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Magic!"
+                    android:fontFamily="@font/jejumyeuongjo"
                     android:textColor="@color/white"
                     android:textSize="12dp"></TextView>
             </LinearLayout>
@@ -246,7 +269,7 @@
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="158dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/titik3samping"
                 app:tint="@color/white"></ImageView>
@@ -261,6 +284,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="playing"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="10dp">
@@ -282,6 +306,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="AMAZING"
+                    android:fontFamily="@font/jejughotic"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold"></TextView>
@@ -290,6 +315,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rex Orange County"
+                    android:fontFamily="@font/jejumyeuongjo"
                     android:textColor="@color/white"
                     android:textSize="12dp"></TextView>
             </LinearLayout>
@@ -304,6 +330,7 @@
         </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -324,6 +351,8 @@
             android:layout_height="32dp"
             android:layout_marginLeft="60dp"
             android:src="@drawable/home"
+            android:id="@+id/home"
+            android:onClick="home"
             app:tint="@color/active_icon"></ImageView>
 
         <ImageView
@@ -338,6 +367,8 @@
             android:layout_height="32dp"
             android:layout_marginLeft="60dp"
             android:src="@drawable/books_duotone"
+            android:id="@+id/library"
+            android:onClick="library"
             app:tint="@color/play_bg"></ImageView>
 
         <ImageView

@@ -13,19 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        Thread thread = new Thread(){
-            @Override
-            public void run() {
-                try {
-                    sleep(3000);
-                }catch (InterruptedException e){
-                    e.printStackTrace();
-                }finally {
-                    startActivity(new Intent(MainActivity.this, homeee.class));
-                }
-            }
-        };
-        thread.start();
+
     }
 }
